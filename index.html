@@ -36,8 +36,8 @@ section{padding:85px 0;scroll-margin-top:75px}.section-label{color:var(--red);fo
 .player-banner{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#360909,#111 70%);border-bottom:2px solid var(--red)}
 .player-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.25),transparent)}
 .player-banner img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block} 
-object-fit:cover;
-object-position: center top;
+object-fit: contain;
+object-position: center;
 position:absolute;
 .player-banner .initials{font-size:62px;font-weight:1000;color:#ffffff22;z-index:1}
 .player-info{padding:22px}.player-info h3{font-size:21px;overflow-wrap:anywhere}.role{display:inline-block;margin-top:8px;background:#321010;color:#ff6060;padding:5px 10px;font-size:10px;font-weight:bold;letter-spacing:1px}
@@ -55,11 +55,10 @@ footer{padding:28px 0;text-align:center;border-top:1px solid #252525;color:var(-
 @keyframes enter{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:760px){nav{min-height:65px}.logo{font-size:17px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;background:#0b0b0b;padding:20px 5%;flex-direction:column;align-items:stretch;gap:17px;border-bottom:1px solid #333}.nav-links.open{display:flex}.hero{min-height:520px}.hero h1{letter-spacing:-1px}.hero h2{letter-spacing:2px}section{padding:65px 0}.about-grid,.card-grid,.achievement-grid,.social-grid{grid-template-columns:1fr}.about-grid{gap:28px}.player-banner{height:210px}.contact-box{padding:24px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}} 
-  .logo img {
-  width: 60px;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  .hero-logo img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
 }
 </style>
 </head>
